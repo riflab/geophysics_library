@@ -2,7 +2,7 @@
 gravtide
 
 # Description
-This code is based on the work of [John Leeman's LongmanTide Python implementation](https://github.com/jrleeman/LongmanTide) with some modifications by [me](arif.darmawan@riflab.com)
+This code is based on the work of [John Leeman's Longman Tide Python implementation](https://github.com/jrleeman/LongmanTide) with some modifications by arif.darmawan@riflab.com
 
 # How to use
 There are two ways to use it depending on the output.
