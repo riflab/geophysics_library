@@ -2,5 +2,5 @@ matplotlib
 numpy
 scipy
 interpies
-osgeo
+gdal
 rasterio
