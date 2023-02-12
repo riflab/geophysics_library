@@ -8,9 +8,8 @@ arif.darmawan@riflab.com
 
 '''
 
-
-fo = open('GGMplus_tilelist_public.dat')
-fw = open('GGMplus_tilelist_public_new.txt','w')
+fo = open('../data/GGMplus_tilelist_public.dat')
+fw = open('GGMplus_tilelist_public.txt','w')
 
 
 tilename = []
@@ -36,19 +35,19 @@ while True:
         max_lat.append((a[3]))
         min_lon.append((a[4]))
         max_lon.append((a[5]))
-        data_pts.append((a[6]))
-        no_data_pts.append((a[7]))
+        # data_pts.append((a[6]))
+        # no_data_pts.append((a[7]))
     i+=1
 
 
 fw.write('type' + '\t' + 'tident'+ '\t' +'ident'+ '\t' +'Latitude'+ '\t' +'Longitude'+ '\t' +'new_trk'+ '\t' +'new_seg' + '\n')
 for i in range(len(tilename)):
 
-    fw.write('TRACK'+ '\t' + tilename[i] + '\t' + tilename[i] + '\t' + max_lat[i] + '\t' +  max_lon[i] + '\t' + 'FALSE' + '\t' +'TRUE' + '\n')
-    fw.write('TRACK'+ '\t' + tilename[i] + '\t' + tilename[i] + '\t' + min_lat[i] + '\t' +  max_lon[i] + '\t' + 'FALSE' + '\t' +'FALSE' + '\n')
-    fw.write('TRACK'+ '\t' + tilename[i] + '\t' + tilename[i] + '\t' + min_lat[i] + '\t' +  min_lon[i] + '\t' + 'FALSE' + '\t' +'FALSE' + '\n')
-    fw.write('TRACK'+ '\t' + tilename[i] + '\t' + tilename[i] + '\t' + max_lat[i] + '\t' +  min_lon[i] + '\t' + 'FALSE' + '\t' +'FALSE' + '\n')
-    fw.write('TRACK'+ '\t' + tilename[i] + '\t' + tilename[i] + '\t' + max_lat[i] + '\t' +  max_lon[i] + '\t' + 'FALSE' + '\t' +'FALSE' + '\n')
+    fw.write('TRACK'+ '\t' + str(i) + '\t' + tilename[i] + '\t' + max_lat[i] + '\t' +  max_lon[i] + '\t' + 'FALSE' + '\t' +'TRUE' + '\n')
+    fw.write('TRACK'+ '\t' + str(i) + '\t' + tilename[i] + '\t' + min_lat[i] + '\t' +  max_lon[i] + '\t' + 'FALSE' + '\t' +'FALSE' + '\n')
+    fw.write('TRACK'+ '\t' + str(i) + '\t' + tilename[i] + '\t' + min_lat[i] + '\t' +  min_lon[i] + '\t' + 'FALSE' + '\t' +'FALSE' + '\n')
+    fw.write('TRACK'+ '\t' + str(i) + '\t' + tilename[i] + '\t' + max_lat[i] + '\t' +  min_lon[i] + '\t' + 'FALSE' + '\t' +'FALSE' + '\n')
+    fw.write('TRACK'+ '\t' + str(i) + '\t' + tilename[i] + '\t' + max_lat[i] + '\t' +  max_lon[i] + '\t' + 'FALSE' + '\t' +'FALSE' + '\n')
 
 fo.close()
 fw.close()
