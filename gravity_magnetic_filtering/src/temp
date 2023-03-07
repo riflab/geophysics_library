@@ -1,0 +1,50 @@
+# ls = LightSource(azdeg=315, altdeg=45)
+    # cmap = plt.cm.gist_earth
+
+    # # [50, 100, 200, 300, 400, 500, 1000,2000,3000,4000,5000]
+
+    # z = [500]
+    # for i in z:
+    #     ax1 = grid1.hp_filter_uc(z=i)
+    #     # ax1 = ax1.dxdy(
+    #     #                 method='SG', 
+    #     #                 deg=11, 
+    #     #                 win=21, 
+    #     #                 doEdges=True, 
+    #     #                 fs_tap=5
+    #     #                 )
+    #     ax1 = ax1.smooth(method='SG', deg=1, win=21, doEdges=True, sigma=1)
+    #     ax1 = ax1.show(
+    #                     cmap_norm='equalize', 
+    #                     contours=True, 
+    #                     azdeg=45, altdeg=45, 
+    #                     title='Residual 2.67', 
+    #                     # zf=1000,
+    #                     figsize=(10, 10)
+    #                     )
+        
+    #     set_map(ax1, frame=True, dxdy=1000)
+    
+    # ax1.plot(df['X'], df['Y'], color='black', linestyle='None', marker='+', markersize=2, alpha=0.5)
+    
+    # for i in z:
+    #     ax1 = grid1.up(z=i)
+    #     # ax1 = ax1.dxdy(
+    #     #                 method='SG', 
+    #     #                 deg=3, 
+    #     #                 win=5, 
+    #     #                 doEdges=True, 
+    #     #                 fs_tap=5
+    #     #                 )
+    #     ax1 = ax1.show(
+    #                     cmap_norm='equalize', 
+    #                     contours=True, 
+    #                     azdeg=45, altdeg=45, 
+    #                     title='Regional 2.67', 
+    #                     # zf=1000,
+    #                     figsize=(10, 10)
+    #                     )
+    #     set_map(ax1, frame=True, dxdy=1000)
+    #     # ax1.save(file_output)
+
+    # ax1.plot(df[X], df[Y], color='black', linestyle='None', marker='+', markersize=1, alpha=0.5)
